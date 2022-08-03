@@ -15,10 +15,10 @@ hong = "\033[1;95m"
 
 logo=f'''
     ▓█████▄  ▄▄▄       ██▀███   ██▓     ██▓ ███▄    █   ▄████ 
-    ▒██▀ ██▌▒████▄    ▓██ ▒ ██▒▓██▒    ▓██▒ ██ ▀█   █  ██▒ ▀█▒  BẢN QUYỀN: ĐỒNG MINH QUANG (DARLING)
-    ░██   █▌▒██  ▀█▄  ▓██ ░▄█ ▒▒██░    ▒██▒▓██  ▀█ ██▒▒██░▄▄▄░  ZALO: 0372760208
-    ░▓█▄   ▌░██▄▄▄▄██ ▒██▀▀█▄  ▒██░    ░██░▓██▒  ▐▌██▒░▓█  ██▓  TOOL: TEST_SEVER_FOLLOW_TRAODOISUB (TOOL BETA)
-    ░▒████▓  ▓█   ▓██▒░██▓ ▒██▒░██████▒░██░▒██░   ▓██░░▒▓███▀▒  DEV: DARLING, MINH QUÂN, TUẤN ANH 
+    ▒██▀ ██▌▒████▄    ▓██ ▒ ██▒▓██▒    ▓██▒ ██ ▀█   █  ██▒ ▀█▒  {red}BẢN QUYỀN: {yellow}ĐỒNG MINH QUANG (DARLING)
+    ░██   █▌▒██  ▀█▄  ▓██ ░▄█ ▒▒██░    ▒██▒▓██  ▀█ ██▒▒██░▄▄▄░  {red}ZALO: {yellow}0372760208
+    ░▓█▄   ▌░██▄▄▄▄██ ▒██▀▀█▄  ▒██░    ░██░▓██▒  ▐▌██▒░▓█  ██▓  {red}TOOL: {yellow}TEST_SEVER_FOLLOW_TRAODOISUB (TOOL_)
+    ░▒████▓  ▓█   ▓██▒░██▓ ▒██▒░██████▒░██░▒██░   ▓██░░▒▓███▀▒  {red}DEV: {yellow}DARLING, MINH QUÂN, TUẤN ANH 
      ▒▒▓  ▒  ▒▒   ▓▒█░░ ▒▓ ░▒▓░░ ▒░▓  ░░▓  ░ ▒░   ▒ ▒  ░▒   ▒ 
      ░ ▒  ▒   ▒   ▒▒ ░  ░▒ ░ ▒░░ ░ ▒  ░ ▒ ░░ ░░   ░ ▒░  ░   ░ 
      ░ ░  ░   ░   ▒     ░░   ░   ░ ░    ▒ ░   ░   ░ ░ ░ ░   ░ 
@@ -38,22 +38,22 @@ log()
 cookies_string =input('cookie tiktok: ')
 os.system('cls')
 log()
-ta =input('a: ')
+ta =input('data_a: ')
 os.system('cls')
 log()
-tb =input('b: ')
+tb =input('data_b: ')
 os.system('cls')
 log()
-tc =input('c: ')
+tc =input('data_c: ')
 os.system('cls')
 log()
-td =input('d: ')
+td =input('data_d: ')
 os.system('cls')
 log()
-tf =input('f: ')
+tf =input('data_f: ')
 os.system('cls')
 log()
-tz =input('z: ')
+tz =input('data_z: ')
 os.system('cls')
 log()
 
@@ -194,8 +194,8 @@ while True:
         }
         response = requests.post('https://t.tiktok.com/api/commit/follow/user/', params=params, cookies=cookies, headers=headers)
         print(f'[{str(loop)}] {red}FOLLOW {xnhac}</> {yellow}{link} {xnhac}</>')
-        print(f'{red}WAIT...',end='\r')
         sleep(3)
+        print(f'{red}WAIT...',end='\r')
         duyet=requests.get(f'https://traodoisub.com/api/coin/?type=TIKTOK_FOLLOW_CACHE&id={id}&access_token={token}')
         sleep(15)
     get=requests.get(f'https://traodoisub.com/api/coin/?type=TIKTOK_FOLLOW&id=TIKTOK_FOLLOW_API&access_token={token}').json()
